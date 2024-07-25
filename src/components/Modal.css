@@ -1,0 +1,51 @@
+/* src/components/Modal.css */
+.Modal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .CloseButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .ModalContent {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1000; /* Higher than other content */
+  }
+  
+  .ReactModal__Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 1001; /* Higher than overlay */
+  }

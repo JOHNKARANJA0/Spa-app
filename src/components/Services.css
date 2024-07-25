@@ -1,0 +1,27 @@
+/* src/components/Services.css */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px; /* Adjust size as needed */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
